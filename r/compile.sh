@@ -18,7 +18,7 @@ mkdir -p ${BUILD_DIR}
 cd ${BUILD_DIR}
 wget https://cran.r-project.org/src/base/R-3/R-${VERSION}.tar.gz
 sudo mkdir ${R_DIR}
-sudo chown $(whoami) ${R_DIR}
+# sudo chown $(whoami) ${R_DIR}
 tar -xf R-${VERSION}.tar.gz
 mv R-${VERSION}/* ${R_DIR}
 rm R-${VERSION}.tar.gz
