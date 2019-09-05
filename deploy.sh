@@ -10,6 +10,8 @@ else
     VERSION=$1
 fi
 
+REGION=$2
+
 function releaseToRegion {
     version=$1
     region=$2
@@ -49,7 +51,9 @@ regions=(
           sa-east-1
         )
 
-for region in "${regions[@]}"
-do
-    releaseToRegion ${VERSION} ${region}
-done
+# for region in "${regions[@]}"
+# do
+
+releaseToRegion ${VERSION} ${REGION}
+
+# done
