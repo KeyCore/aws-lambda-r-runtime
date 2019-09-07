@@ -15,7 +15,7 @@ REGION=$2
 function releaseToRegion {
     version=$1
     region=$2
-    bucket="aws-lambda-r-runtime.$region"
+    bucket="novo-aws-lambda-r-runtime.$region"
     echo "publishing layers to region $region"
     sam package \
         --output-template-file packaged.yaml \
